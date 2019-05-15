@@ -100,6 +100,7 @@ footer[name="actu"]
 /*Partie Header et Footer à changer et rajouter
 quand finit par Dylan ou a merge à la fin */
 
+/*Contact-Adresse-Tel : 2eme bande*/
 #div_contact
 {
 	background-color:rgb(077,077,077);
@@ -114,6 +115,8 @@ quand finit par Dylan ou a merge à la fin */
 {
 	flex-basis: 10% ;
 }
+
+/*Formulaire : 3eme bande*/
 
 #formulaire
 {

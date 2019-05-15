@@ -97,9 +97,13 @@ footer[name="actu"]
 .menu li ul {
  	position:absolute;
 }
+
+
 /*Partie Header et Footer à changer et rajouter
 quand finit par Dylan ou a merge à la fin */
 
+
+/*Actualités*/
 #section_pactu
 {
 	background-color:rgb(077,077,077);
