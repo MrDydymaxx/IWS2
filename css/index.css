@@ -148,18 +148,15 @@ footer[name="actu"]
 	margin-left:12%;
 	font-size: 1.3em;
 	margin-top: -15%;
-}
-
-#logo_footer {
-	flex-grow: 2;
-}
-
+ }
 #nav_footer {
 	display: flex;
 	background-color:rgb(128,128,128);
+	justify-content:space-around;
 }
 #nav_footer ul {
 	display: flex;
+	flex-direction:row;
 	list-style-type:none;
  	text-align:left;
  	font-size: 1.1em;
@@ -178,10 +175,6 @@ footer[name="actu"]
 #nav_footer ul li a:hover {
 	color:red;
 }
-
-#footer2{
-	display: flex;
-}
 .contact {
 	width:40%;
 	height:40%;
@@ -193,12 +186,8 @@ footer[name="actu"]
 }
 
 .partnership {
-	width:15%;
-	height:15%;
-	float:left;
-	margin-right:2%;
-	margin-left:3%;
-	margin-bottom:10%;
+	width:90%;
+	height:90%;
 }
 #official {
 	position:relative;
@@ -269,19 +258,25 @@ footer[name="actu"]
 
 #footer2 {
 	width:100%;
+	display:flex;
 	height:300px;
 }
 #footer3 {
 	width:100%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
 }
 .column_footer {
-	display:inline-block;
-	float:left;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
 	text-align:center;
+	justify-content:space-around;
 	padding-left:3%;
 	padding-right:2%;
 	width:20%;
-	height:80%;
 	background-color:rgb(179,179,179);
 	font-size: 1.1em;
 }
