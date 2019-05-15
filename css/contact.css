@@ -1,0 +1,149 @@
+/*Partie Header et Footer à changer et rajouter
+quand finit par Dylan ou a merge à la fin */
+header {
+	top:0px;
+	left:0px;
+	width:100%;
+	background-color:black;
+	color:white;
+	height:300px;
+}
+body
+{
+	display: flex;
+	flex-direction: column;
+	margin:0px;
+}
+footer[name="contact"]
+{
+	position:relative;
+	top:-50px;
+}
+footer[name="actu"]
+{
+	position:relative;
+	top:-85px;
+}
+#section1_dec
+{
+	 background-color:rgb(077,077,077);
+	 left: 0%;
+	 width: 100%;
+	 top: 25%;
+	 color: white;
+	 font-size: 1.3em;
+ }
+
+#section2_actu{
+	background-color: rgb(102,102,102);
+	left: 0%;
+	width: 100%;
+	top: 220%;
+	height: 100%;
+}
+
+#hdr_logo {
+	padding-left:25%;
+	width:50%;
+}
+
+.lang {
+	position:absolute;
+	top:3%;
+	right:2%;
+}
+
+.lang a {
+	color:white;
+}
+.menu {
+}
+.menu ul {
+	z-index:5;
+ 	margin:0;
+ 	padding:0;
+ 	list-style-type:none;
+ 	text-align:center;
+ 	font-size:1.2em;
+}
+.menu li {
+ 	float:left;
+ 	margin:3%;
+ 	border-style:solid;
+ 	border-color:grey;
+ 	border-width:2px;
+ 	background-color:black;
+}
+.menu li a {
+ 	display:block;
+ 	width:300px;
+ 	color:white;
+ 	text-decoration:none;
+ 	margin-right:5%;
+ 	padding-left:-10px;
+}
+.menu li a:hover {
+ 	color:red;
+}
+.menu ul li ul {
+ 	display:none;
+}
+.menu ul li:hover ul {
+ 	display:block;
+}
+.menu li:hover ul li {
+ 	float:none;
+}
+.menu li ul {
+ 	position:absolute;
+}
+/*Partie Header et Footer à changer et rajouter
+quand finit par Dylan ou a merge à la fin */
+
+#div_contact
+{
+	background-color:rgb(077,077,077);
+	color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#div_contact img
+{
+	flex-basis: 10% ;
+}
+
+#formulaire
+{
+	background-color: rgb(102,102,102);
+	color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#form input, select, textarea
+{
+	width: 114%;
+}
+
+#form input, select{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+#formulaire p
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+}
