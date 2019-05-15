@@ -1,11 +1,53 @@
 header {
-	top:0px;
-	left:0px;
-	width:100%;
 	background-color:black;
 	color:white;
 	height:300px;
 }
+
+#container_logo_header{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.menu ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.menu ul {
+ 	list-style-type:none;
+ 	text-align:center;
+ 	font-size:1.2em;
+}
+.menu li {
+ 	margin:3%;
+ 	border-style:solid;
+ 	border-color:grey;
+ 	border-width:2px;
+ 	padding-right: 6%;
+ 	padding-left: 6%;
+ 	background-color:black;
+}
+.menu li a {
+ 	color:white;
+ 	text-decoration:none;
+}
+.menu li a:hover {
+ 	color:red;
+}
+.menu ul li ul {
+ 	display:none;
+}
+.menu ul li:hover ul {
+ 	display:block;
+}
+.menu li:hover ul li {
+ 	float:none;
+}
+
 body
 {
 	margin:0px;
@@ -40,60 +82,21 @@ footer[name="actu"]
 }
 
 #hdr_logo {
-	padding-left:25%;
-	width:50%;
+	
+	width:100%;
 }
 
 .lang {
-	position:absolute;
-	top:3%;
-	right:2%;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .lang a {
 	color:white;
+	padding: 0.5%;
 }
-.menu {
-}
-.menu ul {
-	z-index:5;
- 	margin:0;
- 	padding:0;
- 	list-style-type:none;
- 	text-align:center;
- 	font-size:1.2em;
-}
-.menu li {
- 	float:left;
- 	margin:3%;
- 	border-style:solid;
- 	border-color:grey;
- 	border-width:2px;
- 	background-color:black;
-}
-.menu li a {
- 	display:block;
- 	width:300px;
- 	color:white;
- 	text-decoration:none;
- 	margin-right:5%;
- 	padding-left:-10px;
-}
-.menu li a:hover {
- 	color:red;
-}
-.menu ul li ul {
- 	display:none;
-}
-.menu ul li:hover ul {
- 	display:block;
-}
-.menu li:hover ul li {
- 	float:none;
-}
-.menu li ul {
- 	position:absolute;
-}
+
+
 #icon_arbre_heron, #icon_carrousel
 {
 	position:absolute;
@@ -148,25 +151,22 @@ footer[name="actu"]
 }
 
 #logo_footer {
-	width:18%;
-	height:30%;
-	display:inline;
-	float:left;
+	flex-grow: 2;
 }
 
 #nav_footer {
-	width:100%;
-	float:left;
+	display: flex;
 	background-color:rgb(128,128,128);
 }
 #nav_footer ul {
+	display: flex;
 	list-style-type:none;
  	text-align:left;
  	font-size: 1.1em;
 }
 #nav_footer ul li ul {
-	display:inline-block;
-	float:left;
+	display: flex;
+	flex-direction: column;
 	margin-top:7%;
  	margin-right:5%;
  	margin-bottom:20px;
@@ -177,6 +177,10 @@ footer[name="actu"]
 }
 #nav_footer ul li a:hover {
 	color:red;
+}
+
+#footer2{
+	display: flex;
 }
 .contact {
 	width:40%;
