@@ -6,34 +6,43 @@ header {
 
 #container_logo_header{
 	display: flex;
-	flex-wrap: nowrap;
-	align-items: flex-start;
-	justify-content: center;
+	flex-direction:row;
+	align-items:flex-start;
+	justify-content:center;
 }
-
-.menu ul{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+body
+{
+	margin:0px;
+	overflow-x:hidden;
 }
 
 .menu ul {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:wrap;
+	z-index:5;
+ 	margin:0;
+ 	padding:0;
  	list-style-type:none;
  	text-align:center;
  	font-size:1.2em;
 }
 .menu li {
+ 	float:left;
  	margin:3%;
  	border-style:solid;
  	border-color:grey;
  	border-width:2px;
- 	padding-right: 6%;
- 	padding-left: 6%;
  	background-color:black;
 }
 .menu li a {
+ 	display:block;
+ 	width:300px;
  	color:white;
  	text-decoration:none;
+ 	margin-right:5%;
+ 	padding-left:-10px;
 }
 .menu li a:hover {
  	color:red;
@@ -47,108 +56,21 @@ header {
 .menu li:hover ul li {
  	float:none;
 }
-
-body
-{
-	margin:0px;
-	overflow-x:hidden;
+.menu li ul {
+ 	position:absolute;
 }
-footer[name="contact"]
-{
-	position:relative;
-	top:-50px;
-}
-footer[name="actu"]
-{
-	position:relative;
-	top:-85px;
-}
-#section1_dec
-{
-	 background-color:rgb(077,077,077);
-	 left: 0%;
-	 width: 100%;
-	 top: 25%;
-	 color: white;
-	 font-size: 1.3em;
- }
-
-#section2_actu{
-	background-color: rgb(102,102,102);
-	left: 0%;
-	width: 100%;
-	top: 220%;
-	height: 100%;
-}
-
-#hdr_logo {
-	
+#hdr_logo {	
 	width:100%;
 }
-
 .lang {
 	display: flex;
 	justify-content: flex-end;
 }
-
 .lang a {
 	color:white;
 	padding: 0.5%;
 }
 
-
-#icon_arbre_heron, #icon_carrousel
-{
-	position:absolute;
-	width:12%;
-	z-index:2;
-	left: 5%;
-}
-
-#arbre_heron, #index_carrousel
-{
-	position:relative;
-	width:40%;
-	z-index:1;
-	left:9%;
-	margin-top:8%;
-}
-
-.txt_article_right
-{
-	float: right;
-	margin-left:55%;
-	margin-right:10%;
-	font-size: 1.3em;
-	margin-top: -16%;
-}
-
-#icon_elephant
-{
-	position:absolute;
-	width:12%;
-	z-index:2;
-	right: 42%;
-	margin-top: 1%;
-}
-
-#elephant
-{
-	position:relative;
-	width:40%;
-	z-index:1;
-	left: 50%;
-	margin-top: 8%;
-}
-
-.txt_article_left
-{
-	float: left;
-	margin-right:55%;
-	margin-left:12%;
-	font-size: 1.3em;
-	margin-top: -15%;
- }
 #nav_footer {
 	display: flex;
 	background-color:rgb(128,128,128);
@@ -176,8 +98,8 @@ footer[name="actu"]
 	color:red;
 }
 .contact {
-	width:40%;
-	height:40%;
+	width:70%;
+	height:70%;
 }
 #contact_us {
 	position:relative;
@@ -186,80 +108,13 @@ footer[name="actu"]
 }
 
 .partnership {
-	width:90%;
-	height:90%;
+	flex:1 1 auto;
 }
-#official {
-	position:relative;
-	left:9%;
-	float:left;
-	bottom:10px;
-}
-#asso{
-	position:relative;
-	left:43%;
-	top:10px;
-}
-.info_footer {
-	text-decoration:none;
-	list-style-type:none;
-	font-size:1.5em;
-	color:black;
-}
-
-#logo_actu
-{
-	position: absolute;
-	width: 60%;
-	margin-top: -8%;
-	margin-left: -15%;
-}
-#banner_actu
-{
-	position: absolute;
-	width: 60%;
-	margin-top: -5%;
-	margin-left: 30%;
-	z-index: 1;
-}
-
-#titre_actu
-{
-	position:relative;
-	left:50%;
-	top:160px;
-	color: black;
-	font-size: 2.5em;
-	text-decoration: none;
-	z-index: 2;
-}
-
-.article_actu h4
-{
-
-	background-color: white;
-	padding: 5%;
-	width: 60%;
-	margin-left: 15%;
-	margin-right: 0%;
-	font-size: 1.5em;
-}
-.article_actu
-{
-	margin-top:70%;
-
-}
-
-.img_actu
-{
-	width: 70%;
-	margin-top:-7%;
-}
-
 #footer2 {
 	width:100%;
 	display:flex;
 	height:300px;
+	flex:1 1 auto;
 }
 #footer3 {
 	width:100%;
@@ -280,9 +135,17 @@ footer[name="actu"]
 	background-color:rgb(179,179,179);
 	font-size: 1.1em;
 }
-.column_footer p
-{
+.column_footer p {
 	font-size: 1.1em;
 	font-style: bold;
 	margin-top: -5%;
+}
+.info_footer {
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+}
+.info_footer a {
+	list-style-type:none;
+ 	text-decoration:none;
 }
