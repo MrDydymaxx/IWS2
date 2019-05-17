@@ -197,10 +197,11 @@ footer[name="actu"]
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin-left:25%;
 	}
 #zone2 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
 	}
@@ -208,4 +209,16 @@ footer[name="actu"]
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+
 	}
+
+
+
+#niveau1
+{
+
+	font-family:myriad pro;
+	text-align: justify;
+	margin-right:20%;
+	color:white;
+}
