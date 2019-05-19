@@ -178,13 +178,19 @@ body
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-end;
-}
-.info_footer {
 	list-style-type:none;
  	text-decoration:none;
  	display: flex;
  	align-items: center;
  	justify-content: space-around;
+}
+.info_footer a {
+	text-decoration:none;
+	color:black;
+	font-size: 1.4em;
+}
+.info_footer a:hover {
+	color:red;
 }
 
 #section1_dec {
