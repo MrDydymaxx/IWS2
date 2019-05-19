@@ -547,6 +547,8 @@ body
 {
 	background-color:rgb(077,077,077);
 	color: white;
+	display: flex;
+	flex-direction: column;
 }
 
 #section_pactu h1
@@ -571,7 +573,7 @@ body
 .article_pactu{
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	align-items: center;
 	background-color: white;
 	margin: 2%;
