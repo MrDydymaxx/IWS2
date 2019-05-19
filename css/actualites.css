@@ -125,8 +125,7 @@ quand finit par Dylan ou a merge à la fin */
 }
 
 #colonne_actu article a img{
-	flex: 1 1 auto;
-	max-height: 250px;
+	max-height: 35vh;
 	width: auto;
 }
 
