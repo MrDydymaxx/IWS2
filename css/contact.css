@@ -1,5 +1,3 @@
-/*Partie Header et Footer à changer et rajouter
-quand finit par Dylan ou a merge à la fin */
 header {
 	top:0px;
 	left:0px;
@@ -56,8 +54,6 @@ footer[name="actu"]
 .lang a {
 	color:white;
 }
-.menu {
-}
 .menu ul {
 	z-index:5;
  	margin:0;
@@ -113,7 +109,8 @@ quand finit par Dylan ou a merge à la fin */
 
 #div_contact img
 {
-	flex-basis: 10% ;
+	width: auto;
+	max-height: 5vh;
 }
 
 /*Formulaire : 3eme bande*/
