@@ -186,15 +186,81 @@ body
  	align-items: center;
  	justify-content: space-around;
 }
-.info_footer a {
-	text-decoration:none;
-	color:black;
+
+#section1_dec {
+	display:flex;
+	flex-direction:column;
+	align-content:center;
+	background:rgb(77,77,77);
+	flex-wrap:wrap;
+}
+.article_index_dec {
+	display:flex;
+	flex-direction:row;
+	align-content:space-around;
+}
+#elephant
+{
+	width:450px;
+	z-index:1;
+	height:auto;
+	margin-top: 8%;
+}
+#arbre_heron, #index_carrousel
+{
+	width:450px;
+	z-index:1;
+
+	margin-top:8%;
+}
+#section2_actu {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	background-color:rgb(102,102,102);
+}
+#logo_actu
+{
+	width:60%;
+}
+.logos_actu {
+	display:flex;
+	align-items:space-around;
+}
+#banner_actu
+{
+	width: 50%;
+	z-index: 1;
+}
+.img_actu {
+	width: 70%;
+	margin-top:-7%;
+}
+.article_actu h4
+{
+
+	background-color: white;
+	padding: 5%;
+	width: 60%;
+	margin-left: 15%;
+	margin-right: 0%;
 	font-size: 1.5em;
 }
+#titre_actu{
+	color: black;
+	font-size: 2em;
+	text-decoration: none;
+	z-index: 2;
+}
+span{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.txt_article {
+	margin-left:10%;
+	margin-right:10%;
+	color:white;
+	font-size:1.3em;
+}
 
-.info_footer a:hover {
-	color:red;
-}
-.partnership {
-	flex:1 1 auto;
-}
