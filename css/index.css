@@ -186,7 +186,7 @@ body
 }
 #logo_actu
 {
-	width: 60%;
+	width:60%;
 }
 .logos_actu {
 	display:flex;
@@ -216,4 +216,15 @@ body
 	font-size: 2em;
 	text-decoration: none;
 	z-index: 2;
+}
+span{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.txt_article {
+	margin-left:10%;
+	margin-right:10%;
+	color:white;
+	font-size:1.3em;
 }
